@@ -19,6 +19,32 @@
     </div>
 
     <div class="container">
+        
+        <!-- Username input section -->
+        <div class="card mt-4 mb-3">
+            <div class="card-body">
+                <h5 class="card-title">User Information</h5>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    <div id="usernameValidation" class="mt-2">
+                        <small class="d-block" id="lengthCheck">
+                            <span class="validation-icon">❌</span> Minimum 8 characters
+                        </small>
+                        <small class="d-block" id="capitalCheck">
+                            <span class="validation-icon">❌</span> At least one capital letter
+                        </small>
+                        <small class="d-block" id="numberCheck">
+                            <span class="validation-icon">❌</span> At least one number
+                        </small>
+                        <small class="d-block" id="specialCheck">
+                            <span class="validation-icon">❌</span> At least one special character (!@#$%^&*(),.?":{}|<>)
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="mt-4">
             <!-- Tab definitions -->
             <ul class="nav nav-tabs" role="tablist">

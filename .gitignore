@@ -1,1 +1,12 @@
+# IDE settings
 .vscode/
+
+# Dependency directories
+node_modules/
+
+# Logs and caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.cache/

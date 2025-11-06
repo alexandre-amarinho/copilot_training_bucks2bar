@@ -36,3 +36,65 @@ h1, h2, h3 {
     background-color: #343a40;
     color: white;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+/* Username validation styles */
+#usernameValidation small {
+    color: #dc3545;
+    transition: color 0.3s ease;
+}
+
+#usernameValidation small.valid {
+    color: #28a745;
+}
+
+#usernameValidation .validation-icon {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#username.is-valid {
+    border-color: #28a745;
+}
+
+#username.is-invalid {
+    border-color: #dc3545;
+}

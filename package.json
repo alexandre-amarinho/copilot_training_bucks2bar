@@ -1,0 +1,24 @@
+{
+  "name": "bucks2bar",
+  "version": "1.0.0",
+  "description": "The bucks2bar project is a web application that utilizes Bootstrap for responsive design and custom styles for enhanced user experience. This project serves as a template for building modern web applications.",
+  "homepage": "https://github.com/alexandre-amarinho/copilot_training_bucks2bar#readme",
+  "bugs": {
+    "url": "https://github.com/alexandre-amarinho/copilot_training_bucks2bar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-amarinho/copilot_training_bucks2bar.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
