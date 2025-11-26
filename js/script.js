@@ -11,6 +11,40 @@ function downloadChartAsImage() {
     link.click();
 }
 
+async function sendChartByEmail() {
+    const email = $('#userEmail').val();
+    const username = $('#username').val();
+    
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    const canvas = document.getElementById('financeChart');
+    const imageData = canvas.toDataURL('image/png');
+    
+    try {
+        const response = await fetch('http://localhost:3000/api/send-chart', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email: email,
+                username: username,
+                chartImage: imageData
+            })
+        });
+        
+        if (response.ok) {
+            alert('Email sent successfully!');
+        } else {
+            alert('Failed to send email');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
 
 // Testable validation functions
 function validateUsername(username) {

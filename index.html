@@ -42,6 +42,10 @@
                         </small>
                     </div>
                 </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter your email address">
+                </div>
             </div>
         </div>
 
@@ -389,7 +393,10 @@
                         <button class="btn btn-primary" onclick="downloadChartAsImage()">
                             <i class="bi bi-download"></i> Download Chart
                         </button>
-
+                        <button class="btn btn-success ms-2" onclick="sendChartByEmail()">
+                            <i class="bi bi-envelope"></i> Send Email
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
